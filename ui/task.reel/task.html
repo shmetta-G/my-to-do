@@ -11,6 +11,9 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
+            },
+            "bindings": {
+                "classList.has('completed')": {"<-": "task.completed"}
             }
         },
         "checkbox": {
@@ -45,8 +48,6 @@
 <body>
     <div data-montage-id="owner" class="Task">
         <input type="checkbox" data-montage-id="checkbox">
-
-        </input>
         <input data-montage-id="textField" type="text">
     </div>
 </body>
